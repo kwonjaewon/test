@@ -43,7 +43,11 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
-                    <li><a href="if_mainPage.html">Another action</a></li>
+
+
+                    <li><a href="if_conpanyInfo.html" target="=iframe_name">Another action</a></li>
+
+
                     <li><a href="#">Something else here</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header">Nav header</li>
@@ -62,6 +66,10 @@
 
     <!-- Carousel
     ================================================== -->
+
+      
+
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -69,6 +77,7 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
+
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img class="first-slide" src="img/1.jpg" alt="First slide">
@@ -141,6 +150,17 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+        <iframe id="iframe_id" width="100%" height="500" class="iframe_cls" name="iframe_name" src="if_mainPage.html" frameborder="1" scrolling="no">   </iframe> 
+
+
+
+
+
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -190,11 +210,11 @@
                 height:auto;
             }
             div.outer-circle{
-             
+
                 background:transparent;
                 width:130px;
                 height:130px;
-             
+
                 -webkit-border-radius: 50%;
                 -moz-border-radius: 50%;
                 border-radius: 50%;
@@ -205,7 +225,7 @@
                 -moz-transition: all .4s ease-in-out;
                 -o-transition: all .4s ease-in-out;
                 transition: all .4s ease-in-out;
-             
+
             }
             div.outer-circle.hover {
                 -moz-transform: scale(2);
@@ -219,16 +239,16 @@
                 -webkit-border-radius: 50%;
                 -moz-border-radius: 50%;
                 border-radius: 50%;
-             
-                background: red; 
-          
+
+                background: red;
+
                 position:absolute;
                 z-index:900;
                 -webkit-transition: all .2s ease-in-out;
                 -moz-transition: all .2s ease-in-out;
                 -o-transition: all .2s ease-in-out;
                 transition: all .2s ease-in-out;
-             
+
             }
             div.middle-circle.hover{
                 -moz-transform: scale(1.8);
@@ -247,7 +267,7 @@
                 -webkit-border-radius: 50%;
                 -moz-border-radius: 50%;
                 border-radius: 50%;
-             
+
                 border:2px solid silver;
                 position:absolute;
                 z-index:1000;
@@ -256,7 +276,7 @@
                 -o-transition: all .5s ease-in-out;
                 transition: all .5s ease-in-out;
             }
-            
+
             div.inner-circle.hover{
                 -moz-transform: scale(1.6);
                 -webkit-transform: scale(1.6);
@@ -270,7 +290,7 @@
                 top: 0;
                 transform-origin: bottom center;
             }
-            
+
         </style>
         <div class="row featurette">
             <div class="col-md-3 text-center">
@@ -279,7 +299,7 @@
                     <div id="mc1" class="middle-circle"  style="background-image:url('img/2.jpg'); background-size:cover; background-repeat: no-repeat; background-position: center center;"></div>
                     <div id="ic1" class="inner-circle" style="background-image:url('img/8.jpg');  background-size:cover; background-repeat: no-repeat; background-position: center center;">
                     </div>
-                    
+
                 </div>
             </div>
             <div class="col-md-3">
@@ -288,7 +308,7 @@
                     <div id="mc2" class="middle-circle"  style="background-image:url('img/2.jpg'); background-size:cover; background-repeat: no-repeat; background-position: center center;"></div>
                     <div id="ic2" class="inner-circle" style="background-image:url('img/8.jpg');  background-size:cover; background-repeat: no-repeat; background-position: center center;">
                     </div>
-                    
+
                 </div>
             </div>
             <div class="col-md-3">
@@ -298,7 +318,7 @@
                     <div class="inner-circle" style="background-image:url('img/8.jpg');  background-size:cover; background-repeat: no-repeat; background-position: center center;">
                     <div class="friend-circle"></div>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="col-md-3">
@@ -308,11 +328,11 @@
                     <div class="inner-circle" style="background-image:url('img/8.jpg');  background-size:cover; background-repeat: no-repeat; background-position: center center;">
                     <div class="friend-circle"></div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -340,7 +360,7 @@
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
-        
+
 
       <!-- FOOTER -->
       <footer>
@@ -368,11 +388,11 @@
             function circleHover(e){
                 $('#oc'+e).addClass('hover'); $('#mc'+e).addClass('hover'); $('#ic'+e).addClass('hover');
             }
-            
+
             function circleOut(e){
                 $('#oc'+e).removeClass('hover'); $('#mc'+e).removeClass('hover'); $('#ic'+e).removeClass('hover');
             }
-            
+
         </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/lettering.js"></script>
